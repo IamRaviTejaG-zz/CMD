@@ -21,7 +21,7 @@ if "%Entry%"=="" (GOTO GETINPUT)
 
 :SHUT
 echo Shutting down immediately.
-shutdown.exe -s -t 0
+shutdown.exe -s -t
 
 :TSHUT
 set /p Tim=Enter time in seconds: 
@@ -30,7 +30,7 @@ shutdown.exe -s -t %Tim%
 
 :RES
 echo Restarting immediately.
-shutdown.exe -r -t 0
+shutdown.exe -r -t
 
 :TRES
 set /p Tim=Enter time in seconds: 
@@ -38,4 +38,4 @@ echo Restarting in %Tim% seconds.
 shutdown.exe -r -t %Tim%
 
 echo Shutdown Control v1.00.
-echo © 2016, Ravi Teja Gannavarapu.
+echo Â© 2016, Ravi Teja Gannavarapu.
